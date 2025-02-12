@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(114, 132, 148);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.container .tenor-gif-embed{
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.container .btn{
+    display: flex;
+    gap: 25px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+/* Yes button */
+.btn a:first-child {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.btn a:first-child:hover {
+    background-color: #3e8e41;
+}
+
+/* No button */
+.btn a:last-child {
+    background-color: #FF4136; /* Red */
+    color: white;
+}
+
+.btn a:last-child:hover {
+    background-color: #E60000;
+}
